@@ -30,4 +30,4 @@ jobs:
         pytest
     - name: Pytest Cov
       run: |
-        pytest libpythonpro -cov=libpythonpro
+        pytest libpythonpro --cov=libpythonpro
