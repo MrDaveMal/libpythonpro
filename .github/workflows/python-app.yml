@@ -27,4 +27,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       run: |
-        pytest libpythonpro --cov=libpythonpro
+        pytest
+    - name: Pytest Cov
+      run: |
+        pytest libpythonpro -cov=libpythonpro
